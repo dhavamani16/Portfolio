@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Ajay's Portfolio</title>
+    <link rel="icon" href="Image/Faviconlogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+
+<body>
+
+    <!-- home function -->
+    <div id="header">
+        <div class="container box">
+            <nav>
+                <img src="" class="logo" width="100px">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="#photography">Photographs</a></li> -->
+                    
+                    <li><a href="#contactme">Contact</a></li>
+
+
+
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div class="setdiv  animate__animated animate__slideInUp">
+                    <h2>Hi, I'm <br></h2>
+                    <h1><span>Dhavamani</span></h1>
+                    <p>Student🧑‍💻 - Software Developer</p>
+                    <div class="wrapper">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="notification"
+                onclick="window.location.href = 'https://drive.google.com/file/d/1Dn5N8ZekGh6i3F_HRELJtzrna_8a-Zal/view?usp=drivesdkk';">
+                <p>Would you like to check my CV ?😊</p>
+                <span class="notification__progress"></span>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="Section-Home/main.js"></script>
+
+    <div id="progress">
+        <span id="progress-value" class="gotoTop">
+            <?xml version="1.0" ?>
+            <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+                height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
+                viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                    d="M128.4,189.3L233.4,89c5.8-6,13.7-9,22.4-9c8.7,0,16.5,3,22.4,9l105.4,100.3c12.5,11.9,12.5,31.3,0,43.2  c-12.5,11.9-32.7,11.9-45.2,0L288,184.4v217c0,16.9-14.3,30.6-32,30.6c-17.7,0-32-13.7-32-30.6v-217l-50.4,48.2  c-12.5,11.9-32.7,11.9-45.2,0C115.9,220.6,115.9,201.3,128.4,189.3z" />
+            </svg>
+        </span>
+    </div>
+    <script src="Section-Home/Scroll-Top.js"></script>
+
+
+    <!-- about section -->
+    <div id="about">
+        <div class="containers box">
+            <div class="row">
+                <div class="col-1">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <div class="sub-line">
+                        <p>
+                            I am pursuing my B.E in Computer Science and Engineering at KIT – Kalaignar Karunanidhi Institute of Technology, Coimbatore.
+                             Driven by a deep passion for coding and problem solving, I actively engage in expanding my technical skills and applying them to create innovative and effective digital solutions.
+                        </p>
+                    </div>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Resume</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('others')">Others</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programing Language: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white">
+                                    <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white">
+                                </div>
+
+                            </li>
+                            <li><span>Frontend:<br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+                                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+                                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+                                    <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Backend: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+                                    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+                            </div>
+
+                            
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="Education"><b>B.E in Computer Science and Engineering 
+                                at KIT – Kalaignar Karunanidhi Institute of Technology, Coimbatore.</b> </span><br>
+
+                                <p>Anna University, Coimbatore</p>
+                                <p align="left">2027 - Passed Out <span class="cg">(CGPA - 8.1)</span> </p>
+
+
+                            
+                            <li><span class="Education"><b>SSC</b> </span><br>
+
+                                <p><span class="Education"><b> Higher Secondary School, Villupuram</b> </span></p>
+                                <p align="left">2023 <span class="cgs">(Percentage-81%)</span> </p>
+
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="Education"><b>Looking For Intership Oppurtunity</b> </span><br>
+
+                                <p>Check Out My CV</p>
+                                <button class="button"
+                                    onclick="window.location.href = 'https://drive.google.com/file/d/1xe4CA9zF1biaqdJjn1XrfKwpiXVcceV0/view?usp=drive_link';">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">Download Now</span>
+                                    </span>
+                                </button>
+
+
+                            </li><br>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <img src="Image/aboutpic.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--  animation effect :IN about section : by clicking - move to next(skills to Other) -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <!-- about section -->
+
+
+
+
+    <!-- skills Section -->
+
+    <h1 class="h1s box">My Skills</h1>
+    <br>
+    <div class="process-wrapperd box">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active">
+                    <div class="step-inner">Frontend Development</div>
+                </li>
+                <li class="step step02">
+                    <div class="step-inner">Cloud & API</div>
+                </li>
+                <li class="step step03">
+                    <div class="step-inner">Language</div>
+                </li>
+                <li class="step step04">
+                    <div class="step-inner">Backend Developemt</div>
+                </li>
+                <li class="step step05">
+                    <div class="step-inner">Others</div>
+                </li>
+            </ul>
+
+            <div id="line">
+                <div id="line-progress"></div>
+            </div>
+        </div>
+
+        <div id="progress-content-section">
+            <div class="section-content discovery active">
+
+
+                <div class="skills">
+
+                    <div class="wrapperd">
+                        <div class="carded">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">HTML & CSS</div>
+                        </div>
+
+                        <div class="carded js">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">JavaScript</div>
+                        </div>
+                        <div class="carded react">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">React</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Frontend Web Developemt Skills</h2>
+            </div>
+
+            <div class="section-content strategy">
+                <div class="skills">
+
+                    <div class="wrapperd">
+                        <div class="carded cloud">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">AWS Cloud Foundation</div>
+                        </div>
+
+                        <div class="carded api">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">REST API</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Cloud & API Skills</h2>
+            </div>
+
+            <div class="section-content creative">
+                <div class="skills">
+
+                    <div class="wrapperd">
+                        <div class="carded cc">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">C</div>
+                        </div>
+
+                        <div class="carded java">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">C++</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Programming Languages</h2>
+            </div>
+
+            <div class="section-content production">
+                <div class="skills">
+                    <div class="wrapperd">
+
+                        <div class="carded node">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Maven</div>
+                        </div>
+
+                        <div class="carded sql">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">MySQL</div>
+                        </div>
+
+                        <div class="carded php">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Spring</div>
+                        </div>
+
+                    </div>
+                </div>
+                <h2>Backend Web Developemt Skills</h2>
+            </div>
+
+            <div class="section-content analysis">
+
+                <div class="skills">
+
+                    <div class="wrapperd">
+                        <div class="carded git">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">GitHub</div>
+                        </div>
+
+                        <div class="carded edit">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Flutter</div>
+                        </div>
+
+                        <div class="carded canva">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Git</div>
+                        </div>
+
+                    </div>
+                </div>
+                <h2>Designing and Collaboration Skills</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let optionse = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.95,
+            fill: { gradient: ["#526D82", "rgb(2, 6, 48)"] },
+        };
+        $(".circled .bar")
+            .circleProgress(optionse)
+            .on("circle-animation-progress", function (event, progress, stepValue) {
+                $(this)
+                    .parent()
+                    .find("span")
+                    .text(String(stepValue.toFixed(2).substr(2)) + "%");
+            });
+        $(".js .bar").circleProgress({
+            value: 0.80,
+        });
+        $(".react .bar").circleProgress({
+            value: 0.62,
+        });
+        $(".cloud .bar").circleProgress({
+            value: 0.85,
+        });
+        $(".api .bar").circleProgress({
+            value: 0.74,
+        });
+        $(".cc .bar").circleProgress({
+            value: 0.75,
+        });
+        $(".java .bar").circleProgress({
+            value: 0.83,
+        });
+        $(".node .bar").circleProgress({
+            value: 0.80,
+        });
+        $(".sql .bar").circleProgress({
+            value: 0.55,
+        });
+        $(".php .bar").circleProgress({
+            value: 0.68,
+        });
+        $(".git .bar").circleProgress({
+            value: 0.93,
+        });
+        $(".canva .bar").circleProgress({
+            value: 0.89,
+        });
+        $(".edit .bar").circleProgress({
+            value: 0.86,
+        });
+    </script>
+
+
+    <!-- First script = jQuery core = unlocks $ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+
+        $(".step").click(function () {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
+
+        $(".step01").click(function () {
+            $("#line-progress").css("width", "2%");
+            $(".discovery").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step02").click(function () {
+            $("#line-progress").css("width", "25%");
+            $(".strategy").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step03").click(function () {
+            $("#line-progress").css("width", "50%");
+            $(".creative").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step04").click(function () {
+            $("#line-progress").css("width", "75%");
+            $(".production").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step05").click(function () {
+            $("#line-progress").css("width", "100%");
+            $(".analysis").addClass("active").siblings().removeClass("active");
+        });
+
+
+    </script>
+
+    <!-- skill section -->
+
+
+
+    <!-- Projects section -->
+    <div id="projects">
+        <div class="containers box">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="service-list">
+                <div>
+                    <div class="card" onclick="window.location.href = 'https://interactive-portfolio-sigma-nine.vercel.app/';">
+                        <div class="card9">
+                            <div class="position">
+                                <img align="center" class="icon" src="Image/Port.gif" width="190">
+                                <span class="p_hcolor">Translator</span>
+                                <p>
+                                    A real-time image-to-text translation project built using AI and OCR technology.
+                                </p>
+                                <p>
+                                    <b><span class="p_color">Langauge :</span></b> Python,HTML,CSS <br>
+                                    <b><span class="p_color">Framework :</span></b> Flask,Flutter <br>
+                                    <b><span class="p_color">Environment :</span></b> VS Code <br>
+
+                                </p>
+
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" onclick="window.location.href = 'https://flip-n-find-game.vercel/';">
+                        <div class="card8">
+                            <div class="position">
+                                <img align="center" class="icon" src="Image/fgRVopfFAR.gif" width="190">
+                                <span class="p_hcolor">Chatbot</span>
+                                <p>
+                                    AI-powered chatbot providing empathetic mental health guidance through real-time responses and dataset context
+                                </p>
+                                <p>
+
+                                    <b><span class="p_color">Frontend :</span></b>JS,CSS,HTML,Python<br>
+                                    <b><span class="p_color">Environment :</span></b> Visual Studio Studio<br>
+
+                                </p>
+
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" onclick="window.location.href = 'https://the-skillverse-all-in-one.vercel/';">
+                        <div class="card7"> `1
+                            <div class="position">
+                                <img align="center" class="icon" src="Image/books.gif" width="190">
+                                <span class="p_hcolor">Todolist</span>
+                                <p>
+                                    A Java and Maven-based project with database integration to manage tasks efficiently.
+                                </p>
+                                <p>
+
+                                    <b><span class="p_color">Frontend :</span></b>Maven,Java,DB<br>
+                                    <b><span class="p_color">Environment :</span></b> Visual Studio Studio<br>
+
+                                </p>
+
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects section -->
+
+
+
+
+
+    <!-- Photographs Section -->
+    <div id="projects">
+        <div id="photographs" class="box">
+            <h1 class="sub-project">Skills</h1>
+            <div class="pos_Set">
+                <div class="slider" onclick="window.location.href = ' ;">
+                    <span style="--i:1;"><img class="scales" src="https://toppng.com/uploads/preview/c-programming-icon-c-programming-language-logo-11562945679duaxtn3yq0.png"></span>
+                    <span style="--i:2;"><img class="scales" src="data:image/webp;base64,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"></span>
+                    <span style="--i:3;"><img class="scales" src="https://wallpaperaccess.com/full/8151440.jpg"></span>
+                    <span style="--i:4;"><img class="scales" src="https://wallpapercave.com/wp/wp7250032.png"></span>
+                    <span style="--i:5;"><img class="scales" src="https://acodez.in/wp-content/uploads/2015/06/HTML5-Features-Tips-and-Techniques-You-Must-Know-e1433145641482.jpg"></span>
+                    <span style="--i:6;"><img class="scales" src="https://logodix.com/logo/1169447.png"></span>
+                    <span style="--i:7;"><img class="scales" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEZWMe3q5b-os9q4IIf36XCjs6RTlteejCWJYkYJouinSt1o1FnOZGm36OrQ50c3zr7Kl8wVsDk5txZ7bJBtCW12-rEEqms2IJ9Riztforo39x6MlrKyvAYnN3bFxgqB-jVnKUZIBvbdml1pn6zBB94AOg6_x5-yQJUpygD7Kh-1vQ7r2YLUZqTN8TR7I/s3000/what-is-javascript.jpg"></span>
+                    <span style="--i:8;"><img class="scales" src="https://miro.medium.com/v2/resize:fit:680/1*_VsOevdQvZx2wTuuGupezA.jpeg"></span>
+                    <span style="--i:9;"><img class="scales" src="https://th.bing.com/th/id/R.37e1333e6d2f56d0e690fe1a7e3f6402?rik=%2fFeRYbXEVnDP2A&riu=http%3a%2f%2fqnax.sh%2fblog%2fwp-content%2fuploads%2f2024%2f04%2fd7b04738-bc60-48a8-bc99-d73a71ba998e.webp&ehk=1fNN1USRyaHy1qqXgFI%2fqVGDD7bjyqKZw0qhVC%2bbRFg%3d&risl=&pid=ImgRaw&r=0"></span>
+                    <span style="--i:10;"><img class="scales" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/3ffd0b68614327.Y3JvcCwxNjAxLDEyNTIsMCwxNzQ.png"></span>
+                    <span style="--i:11;"><img class="scales" src="https://th.bing.com/th/id/OIP.Xa0BEkwl0Zx4qnY9lMbD7gHaHa?w=199&h=199&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"></span>
+                    <span style="--i:12;"><img class="scales" src="https://images.seeklogo.com/logo-png/35/1/flutter-logo-png_seeklogo-354671.png"></span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Photographs Section -->
+
+    <!-- achivements section -->
+
+
+    
+
+    <!-- contact me -->
+
+    <div id="contactme" class="box">
+        <section class="contact hidden">
+            <div class="contact-form">
+                <h1>Contact <span class="us">Me</spanc>
+                </h1>
+                <p>phone:9500986233 <br>
+                    Email:dhavamaniak@gmail.com
+                </p>
+                <form action="https://formspree.io/f/mzzgonea" method="POST">
+                    <input type="name" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="" placeholder="E-mail" required>
+                    <input type="subject" placeholder="Write a Subject" required>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+
+            </div>
+            <div class="contact-img">
+                <img class="check" src="Image/side.jpg">
+            </div>
+        </section>
+    </div>
+
+    <!-- contact me -->
+
+
+    <div class="Social box">
+        <div class="wrappeer">
+            
+            <div class="icon github" onclick="window.location.href = 'https://github.com/dhavamani16';">
+                <div class="tooltip">GitHub</div>
+                <span><i class="fab fa-github"></i> </span>
+            </div>
+            <div class="icon linkedin" onclick="window.location.href = 'https://www.linkedin.com/in/dhavamani-a-7b452a332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';">
+                <div class="tooltip">Linkedin</div>
+                <span><i class="fab fa-linkedin"></i> </span>
+            </div>
+            <div class="icon youtube" onclick="window.location.href = 'https://codolio.com/profile/DHAVAMANI_16';">
+                <div class="tooltip">Codolio</div>
+                <span><i class="fab fa-codolio"></i> </span>
+                
+            </div>
+
+        </div>
+
+
+
+        <div class="cv box">
+            <button class="button"
+                onclick="window.location.href = 'https://drive.google.com/file/d/1xe4CA9zF1biaqdJjn1XrfKwpiXVcceV0/view?usp=drive_link';">
+                <span class="button_lg">
+                    <span class="button_sl"></span>
+                    <span class="button_text">Download My CV</span>
+                </span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="follower box">
+        <div class="wrapperpp">
+            <div class="containerpp">
+                <i class="fa-brands fa-github"></i>
+                <span class="num" data-val="15">000</span>
+                <span class="text">Github Repostiories</span>
+            </div>
+
+            <div class="containerpp">
+                <i class="fa-brands fa-codolio"></i>
+                <span class="num" data-val="1500">000</span>
+                <span class="text">Problems solved</span>
+            </div>
+
+
+            <div class="containerpp ">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="num" data-val="490">000</span>
+                <span class="text">Linkedin Followers</span>
+            </div>
+            <!-- <div class="containerpp">
+                <i class="fa-brands fa-unsplash"></i>
+                <span class="num" data-val="2000">000</span>
+                <span class="text">Unplash Views</span>
+            </div> -->
+        </div>
+
+    </div>
+
+
+    <script src="Section-Home/animation.js"></script>
+
+
+
+    <div class="end">
+        <p>© 2025 Ajay Babu Kante. All rights reserved.</p>
+    </div>
+    <!-- 
+    <script>
+
+        // Select all elements with the "box" class
+        const boxes = document.querySelectorAll('.box');
+
+        // Create a new Intersection Observer
+        const options = {
+            root: null, // use the viewport as the root
+            threshold: 0 // 20% of the element is visible
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+
+
+
+
+      } else {
+                    entry.target.style.opacity = 0;
+
+
+                }
+            });
+        }, options);
+
+        // Start observing each target element
+        boxes.forEach(box => observer.observe(box));
+
+
+
+    </script> -->
+
+
+</body>
+
+</html>
