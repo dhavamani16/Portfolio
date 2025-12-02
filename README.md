@@ -1,24 +1,15 @@
-#  Interactive Portfolio
+# Interactive Portfolio
 
-Welcome to my **Interactive Portfolio**!  
-This project showcases my skills in modern web development with a clean, responsive, and interactive design.
+My personal portfolio website built to showcase my skills, projects, and contact details. 
+It is developed using HTML, CSS, and JavaScript, featuring a responsive design and interactive elements. 
 
----
+## Features
+- Responsive layout for mobile and desktop
+- Smooth animations and transitions
+- Project showcase with descriptions and badges
+- Contact section for direct connection
 
-##  About Me
-
-I am **Dhavamani**, a passionate Web Developer focused on building user-friendly and impactful digital experiences.
-
----
-
-## Project Preview
-
-![Portfolio Screenshot](http://127.0.0.1:5500/Interactive-Portfolio-main/index.html#projects)
-
----
-
-##  Live Demo
-
- [View My Portfolio Live](http://127.0.0.1:5500/Interactive-Portfolio-main/index.html#projects)
-
---------------*Thank You**----------------
+## Skills Highlighted
+- HTML, CSS, JavaScript, Dart, Flutter
+- C, C++, Python
+- GitHub and version control
